@@ -6,6 +6,7 @@ $q3 = "$_POST[q3]";
 $q4 = "$_POST[q4]";
 $q5 = "$_POST[q5]";
 $score = 0;
+echo '<link href="Quiz.css" rel="stylesheet" type="text/css" />';
 
 echo "<p>Question 1: What is the capitol of Kansas?<br>You answered: " . $q1 . "<br>Correct answer: Topeka</p>";
 echo "<p>Question 2: Who is the patriarch of the Simpson family?<br>You answered: " . $q2 . "<br>Correct answer: Homer</p>";
@@ -34,4 +35,4 @@ if($q5 == "Michael Scott")
   $score ++;
 }
 
-echo "<p>You scored " . $score . "/5";
+echo "<p>You scored " . $score . "/5  " . ($score/5*100) . "%";

@@ -1,4 +1,5 @@
 <?php
+  echo '<link href="Quiz.css" rel="stylesheet" type="text/css" />';
   echo '<table border="1">';
     echo "<tr>";
       echo "<td></td>";
