@@ -1,4 +1,41 @@
 body
 {
-  background-color: #D3D3D3;
+  background-color: #36454f;
+}
+p
+{
+  color: white;
+}
+input
+{
+  color: black;
+  font-weight: bold;
+}
+input#quantity
+{
+  width: 25px;
+}
+button
+{
+  color: white;
+}
+label
+{
+  color: white;
+}
+td
+{
+  color: white;
+  padding-right: 20px;
+  border-top: white solid 2px;
+}
+th
+{
+  color:white;
+  text-align: left;
+}
+h2
+{
+  color:white;
+  text-decoration: underline;
 }

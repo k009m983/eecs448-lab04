@@ -5,11 +5,64 @@
   </head>
   <body>
     <form>
- 			Username:<br>
+ 			<label>Username:</label><br>
  			<input type="text" name="username"><br>
- 			Password:<br>
+ 			<label>Password:</label><br>
  			<input type="text" name="password"><br>
-
+      <br>
+      <h2>Shipping Options</h2>
+      <label><input type="radio" name ="shipping" value = "free" >Free 7 Day</label><br>
+      <label><input type="radio" name ="shipping" value = "threeDay" >$5.00 3 Day</label><br>
+      <label><input type="radio" name ="shipping" value = "overNight" >$50.00 Over Night</label><br>
+      <br>
+      <h2>Items</h2>
+      <table>
+        <tr>
+          <th>
+            Item
+          </th>
+          <th>
+            Price
+          </th>
+          <th>
+            Quantity
+          </th>
+        </tr>
+        <tr>
+          <td>
+            <label>15ft High Speed HDMI Cable</label>
+          </td>
+          <td>
+            <label>$30.00</label>
+          </td>
+          <td>
+            <input id="quantity" type="text" name="item1"><br>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>Industrial Staples - 800 Count</label>
+          </td>
+          <td>
+            <label>$13.00</label>
+          </td>
+          <td>
+            <input id="quantity" type="text" name="item1"><br>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>Whoopee Cushion</label>
+          </td>
+          <td>
+            <label>$6.66</label>
+          </td>
+          <td>
+            <input id="quantity" type="text" name="item1"><br>
+          </td>
+        </tr>
+      </table>
+      <br><br>
 			<INPUT TYPE="button" NAME="button" Value="Submit Order" onClick="validate(this.form)">
 	</form>
   </body>
