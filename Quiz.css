@@ -27,12 +27,17 @@ td
 {
   color: white;
   padding-right: 20px;
-  border-top: white solid 2px;
+  border-bottom: white solid 2px;
+}
+td#total
+{
+  background-color: green;
 }
 th
 {
-  color:white;
+  color:#FA8072;
   text-align: left;
+  border-bottom: white solid 2px;
 }
 h2
 {
