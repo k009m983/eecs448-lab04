@@ -11,8 +11,6 @@ function validate(form)
   var item2 = form.item2.value;
   var item3 = form.item3.value;
 
-
-
   if(username == "" || username == null)
   {
     alert("Username cannot be empty");
@@ -44,10 +42,6 @@ function validate(form)
 }
 function submit(form)
 {
-  alert("X");
-  //form.setAttribute("method", "post");
-  //form.submit();
-
   var request = new XMLHttpRequest();
       request.onreadystatechange = function ()
       {
@@ -66,11 +60,6 @@ function submit(form)
       params = "username=" + form.username.value + "&password=" + form.password.value + "&shipping=" + form.shipping.value + "&item1=" + form.item1.value + "&item2=" + form.item2.value + "&item3=" + form.item3.value;
       request.open("POST", "customerBackend.php", true);
       request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-      alert(params);
-
-      //request.send(params);
-      //request.send();
-      //return request.onreadystatechange();
 
       window.location = ('customerBackend.php?' + params);
 
